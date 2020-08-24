@@ -1,0 +1,11 @@
+include:
+  - 'https://gitlab.vcat.de/gitlab/gitlab-ci/raw/master/templates/.ssh-git-deployment.yml'
+  - 'https://gitlab.vcat.de/gitlab/gitlab-ci/raw/master/templates/deploy-ssh-staging.yml'
+  - 'https://gitlab.vcat.de/gitlab/gitlab-ci/raw/master/templates/test-phpcs-wordpress.yml'
+
+deploy:staging:
+  environment:
+    url: https://drk-brb-blog.staging.vcat.de
+  variables:
+    SSH_HOST: drk-brb-blog.staging.vcat.de@drk-brb-blog.staging.vcat.de
+    SSH_DOCUMENT_ROOT: ~/public_html/wp-content/themes/uku-drk
