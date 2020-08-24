@@ -9,3 +9,260 @@
  License:     GNU General Public License v2 or later
  License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
+/* merriweather-700 - latin */
+@font-face {
+	font-family: 'Merriweather';
+	font-style: normal;
+	font-weight: 700;
+	src: url("fonts/merriweather-v21-latin/merriweather-v21-latin-700.eot");
+	/* IE9 Compat Modes */
+	src: local("Merriweather Bold"), local("Merriweather-Bold"), url("fonts/merriweather-v21-latin/merriweather-v21-latin-700.eot?#iefix") format("embedded-opentype"), url("fonts/merriweather-v21-latin/merriweather-v21-latin-700.woff2") format("woff2"), url("fonts/merriweather-v21-latin/merriweather-v21-latin-700.woff") format("woff"), url("fonts/merriweather-v21-latin/merriweather-v21-latin-700.ttf") format("truetype"), url("fonts/merriweather-v21-latin/merriweather-v21-latin-700.svg#Merriweather") format("svg");
+	/* Legacy iOS */
+}
+
+/* merriweather-sans-700 - latin */
+@font-face {
+	font-family: 'Merriweather Sans';
+	font-style: normal;
+	font-weight: 700;
+	src: url("fonts/merriweather-sans-v13-latin/merriweather-sans-v13-latin-700.eot");
+	/* IE9 Compat Modes */
+	src: local(""), url("fonts/merriweather-sans-v13-latin/merriweather-sans-v13-latin-700.eot?#iefix") format("embedded-opentype"), url("fonts/merriweather-sans-v13-latin/merriweather-sans-v13-latin-700.woff2") format("woff2"), url("fonts/merriweather-sans-v13-latin/merriweather-sans-v13-latin-700.woff") format("woff"), url("fonts/merriweather-sans-v13-latin/merriweather-sans-v13-latin-700.ttf") format("truetype"), url("fonts/merriweather-sans-v13-latin/merriweather-sans-v13-latin-700.svg#MerriweatherSans") format("svg");
+	/* Legacy iOS */
+}
+
+/* open-sans-regular - latin */
+@font-face {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 400;
+	src: url("fonts/open-sans-v17-latin/open-sans-v17-latin-regular.eot");
+	/* IE9 Compat Modes */
+	src: local("Open Sans Regular"), local("OpenSans-Regular"), url("fonts/open-sans-v17-latin/open-sans-v17-latin-regular.eot?#iefix") format("embedded-opentype"), url("fonts/open-sans-v17-latin/open-sans-v17-latin-regular.woff2") format("woff2"), url("fonts/open-sans-v17-latin/open-sans-v17-latin-regular.woff") format("woff"), url("fonts/open-sans-v17-latin/open-sans-v17-latin-regular.ttf") format("truetype"), url("fonts/open-sans-v17-latin/open-sans-v17-latin-regular.svg#OpenSans") format("svg");
+	/* Legacy iOS */
+}
+
+/* open-sans-italic - latin */
+@font-face {
+	font-family: 'Open Sans';
+	font-style: italic;
+	font-weight: 400;
+	src: url("fonts/open-sans-v17-latin/open-sans-v17-latin-italic.eot");
+	/* IE9 Compat Modes */
+	src: local("Open Sans Italic"), local("OpenSans-Italic"), url("fonts/open-sans-v17-latin/open-sans-v17-latin-italic.eot?#iefix") format("embedded-opentype"), url("fonts/open-sans-v17-latin/open-sans-v17-latin-italic.woff2") format("woff2"), url("fonts/open-sans-v17-latin/open-sans-v17-latin-italic.woff") format("woff"), url("fonts/open-sans-v17-latin/open-sans-v17-latin-italic.ttf") format("truetype"), url("fonts/open-sans-v17-latin/open-sans-v17-latin-italic.svg#OpenSans") format("svg");
+	/* Legacy iOS */
+}
+
+/* open-sans-700italic - latin */
+@font-face {
+	font-family: 'Open Sans';
+	font-style: italic;
+	font-weight: 700;
+	src: url("fonts/open-sans-v17-latin/open-sans-v17-latin-700italic.eot");
+	/* IE9 Compat Modes */
+	src: local("Open Sans Bold Italic"), local("OpenSans-BoldItalic"), url("fonts/open-sans-v17-latin/open-sans-v17-latin-700italic.eot?#iefix") format("embedded-opentype"), url("fonts/open-sans-v17-latin/open-sans-v17-latin-700italic.woff2") format("woff2"), url("fonts/open-sans-v17-latin/open-sans-v17-latin-700italic.woff") format("woff"), url("fonts/open-sans-v17-latin/open-sans-v17-latin-700italic.ttf") format("truetype"), url("fonts/open-sans-v17-latin/open-sans-v17-latin-700italic.svg#OpenSans") format("svg");
+	/* Legacy iOS */
+}
+
+/* open-sans-700 - latin */
+@font-face {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 700;
+	src: url("fonts/open-sans-v17-latin/open-sans-v17-latin-700.eot");
+	/* IE9 Compat Modes */
+	src: local("Open Sans Bold"), local("OpenSans-Bold"), url("fonts/open-sans-v17-latin/open-sans-v17-latin-700.eot?#iefix") format("embedded-opentype"), url("fonts/open-sans-v17-latin/open-sans-v17-latin-700.woff2") format("woff2"), url("fonts/open-sans-v17-latin/open-sans-v17-latin-700.woff") format("woff"), url("fonts/open-sans-v17-latin/open-sans-v17-latin-700.ttf") format("truetype"), url("fonts/open-sans-v17-latin/open-sans-v17-latin-700.svg#OpenSans") format("svg");
+	/* Legacy iOS */
+}
+
+/*--------------------------------------------------------------
+# Base
+--------------------------------------------------------------*/
+body {
+	color: #554f4a;
+	font-family: HelveticaNeueLT, "Helvetica Neue", OpenSans, Arial, Helvetica, sans-serif;
+}
+
+a {
+	color: #0075a9;
+}
+
+a:active, a:focus {
+	outline: auto;
+	-moz-outline-style: unset;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: #e46450;
+	font-family: "Merriweather", Georgia, Times, "Times New Roman", serif;
+}
+
+cite,
+blockquote {
+	color: #e46450;
+	font-family: "Merriweather", Georgia, Times, "Times New Roman", serif;
+}
+
+h1.site-title,
+p.site-title,
+.entry-summary,
+.widget,
+.title-footer,
+.entry-header p.intro,
+.entry-content,
+.entry-content p,
+.entry-content table,
+.entry-content dl,
+.entry-content ul,
+.entry-content ol,
+p.section-about-text,
+p.text-big,
+p.text-small,
+#secondary h2.widget-title,
+#sidebar-page h2.widget-title,
+.entry-content blockquote p,
+.entry-content p span.uppercase,
+.section-about-column-two .social-nav ul li a,
+.section-about-column-one p cite,
+.widget_mc4wp_form_widget input[type="email"],
+.widget_mc4wp_form_widget input[type="submit"],
+.jetpack_subscription_widget #subscribe-email input[type="email"],
+.jetpack_subscription_widget #subscribe-submit input[type="submit"],
+.contact-form input[type="submit"],
+input,
+textarea,
+.site-content div.wpcf7 input,
+.site-content div.wpcf7 textarea,
+.site-content div.wpcf7 p,
+a.standard-btn,
+div.sharedaddy h3.sd-title,
+.widget h2.widget-title,
+.entry-content h1,
+.entry-content h2,
+.entry-content h3,
+.entry-content h4,
+.entry-content h5,
+.big-instagram-wrap .clear,
+.single-product .entry-summary h1,
+.uku-standard.blog-classic .more-link,
+.widget_mc4wp_form_widget input[type="text"] {
+	font-family: HelveticaNeueLT, "Helvetica Neue", OpenSans, Arial, Helvetica, sans-serif;
+}
+
+.entry-header h2.entry-title,
+#secondary h2.widget-title,
+#sidebar-page h2.widget-title {
+	color: #554f4a;
+}
+
+.entry-meta a,
+.entry-cats a {
+	color: #0075a9;
+}
+
+.entry-header h2.entry-title a {
+	color: #e46450;
+	font-family: "Merriweather", Georgia, Times, "Times New Roman", serif;
+}
+
+.entry-header h2.entry-title a:hover {
+	color: inherit;
+	text-decoration: underline;
+}
+
+/*--------------------------------------------------------------
+# Components
+--------------------------------------------------------------*/
+.single-post .entry-header p.intro,
+.entry-meta,
+.entry-meta a,
+.entry-cats,
+.entry-summary,
+.front-section-title,
+.social-front-title,
+.widget_mc4wp_form_widget p,
+.jetpack_subscription_widget #subscribe-text p,
+.section-about-column-one p {
+	color: #554f4a;
+}
+
+.blog-wrap h3.blog-title,
+.archive-header h1.archive-title,
+.widget h2.widget-title,
+#primary .hentry,
+.page-template-default #primary .hentry,
+.page-fullwidth #primary .hentry,
+.page-template-no-sidebar #primary .hentry,
+.error404 #primary .page {
+	border-top: 1px solid #554f4a;
+}
+
+.single-post .entry-content blockquote,
+.page .entry-content blockquote {
+	border-color: #554f4a;
+}
+
+.widget_search input[type="submit"],
+.post-password-form input[type="submit"],
+input[type="button"],
+input[type="submit"],
+input#submit {
+	border-color: #554f4a;
+}
+
+.widget_search input[type="submit"]:hover,
+.post-password-form input[type="submit"]:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input#submit:hover {
+	background-color: #e46450;
+	border-color: #e46450;
+}
+
+.pagination {
+	border-color: #554f4a;
+	color: #554f4a;
+}
+
+.pagination a {
+	color: #0075a9;
+}
+
+.pagination a:hover {
+	color: #10b5ff;
+}
+
+#colophon {
+	background-color: #ebf5ff;
+	color: #554f4a;
+}
+
+#colophon a {
+	color: #0075a9;
+}
+
+#colophon a:hover {
+	color: #10b5ff;
+}
+
+#colophon #site-info,
+#colophon #footer-social span {
+	color: #554f4a;
+}
+
+#colophon #site-info a,
+#colophon #footer-social span a {
+	color: #0075a9;
+}
+
+#colophon #site-info a:hover,
+#colophon #footer-social span a:hover {
+	color: #10b5ff;
+}
+
+/*# sourceMappingURL=style.css.map */

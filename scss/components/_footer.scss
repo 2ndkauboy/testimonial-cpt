@@ -1,0 +1,25 @@
+#colophon {
+	background-color: $color__light-blue;
+	color: $color__text-main;
+
+	a {
+		color: $color__link;
+
+		&:hover {
+			color: $color__link-hover;
+		}
+	}
+
+	#site-info,
+	#footer-social span {
+		color: $color__text-main;
+
+		a {
+			color: $color__link;
+
+			&:hover {
+				color: $color__link-hover;
+			}
+		}
+	}
+}

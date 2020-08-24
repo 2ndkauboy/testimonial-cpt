@@ -1,0 +1,54 @@
+.single-post .entry-header p.intro,
+.entry-meta,
+.entry-meta a,
+.entry-cats,
+.entry-summary,
+.front-section-title,
+.social-front-title,
+.widget_mc4wp_form_widget p,
+.jetpack_subscription_widget #subscribe-text p,
+.section-about-column-one p {
+	color: $color__text-main;
+}
+
+.blog-wrap h3.blog-title,
+.archive-header h1.archive-title,
+.widget h2.widget-title,
+#primary .hentry,
+.page-template-default #primary .hentry,
+.page-fullwidth #primary .hentry,
+.page-template-no-sidebar #primary .hentry,
+.error404 #primary .page {
+	border-top: 1px solid $color__text-main;
+}
+
+.single-post .entry-content blockquote,
+.page .entry-content blockquote {
+	border-color: $color__text-main;
+}
+
+.widget_search input[type="submit"],
+.post-password-form input[type="submit"],
+input[type="button"],
+input[type="submit"],
+input#submit {
+	border-color: $color__text-main;
+
+	&:hover {
+		background-color: $color__soft-red;
+		border-color: $color__soft-red;
+	}
+}
+
+.pagination {
+	border-color: $color__text-main;
+	color: $color__text-main;
+
+	a {
+		color: $color__link;
+
+		&:hover {
+			color: $color__link-hover;
+		}
+	}
+}

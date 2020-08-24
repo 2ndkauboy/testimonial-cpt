@@ -1,0 +1,26 @@
+/*
+ Theme Name:  UKU - DRK-Landesverband Brandenburg e.V.
+ Theme URI:   https://www.anarieldesign.com/themes/
+ Description: UKU Child Theme for DRK-Landesverband Brandenburg e.V.
+ Author:      VCAT Consulting GmbH
+ Author URI:  https://www.vcat.de/
+ Template:    uku
+ Version:     1.0.0
+ License:     GNU General Public License v2 or later
+ License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+// Import variables and fonts.
+@import "variables";
+@import "fonts";
+
+/*--------------------------------------------------------------
+# Base
+--------------------------------------------------------------*/
+@import "base";
+
+/*--------------------------------------------------------------
+# Components
+--------------------------------------------------------------*/
+@import "components/posts-and-pages";
+@import "components/footer";

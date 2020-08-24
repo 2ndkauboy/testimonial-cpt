@@ -34,13 +34,12 @@
     <!-- Check all files in this directory and the directories below it. -->
     <file>.</file>
 
+    <!-- Ignore compiled files -->
+    <exclude-pattern>style.css</exclude-pattern>
     <!-- Exclude external resources -->
     <exclude-pattern>*/node_modules/*</exclude-pattern>
     <!-- Exclude files, that were copied from the parent theme and only slightly modified -->
-    <exclude-pattern>footer.php</exclude-pattern>
-    <exclude-pattern>header.php</exclude-pattern>
-    <exclude-pattern>header-custom.php</exclude-pattern>
-    <exclude-pattern>page.php</exclude-pattern>
+    <!--<exclude-pattern>footer.php</exclude-pattern>-->
 
     <!--
     #############################################################################

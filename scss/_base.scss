@@ -1,0 +1,97 @@
+body {
+	color: $color__text-main;
+	font-family: $font__content;
+}
+
+a {
+	color: $color__middle-blue;
+
+	&:active,
+	&:focus {
+		outline: auto;
+		-moz-outline-style: unset;
+	}
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h1.site-title,
+p.site-title,
+.entry-content h1,
+.entry-content h2,
+.entry-content h3,
+.entry-content h4,
+.entry-content h5,
+div.sharedaddy h3.sd-title,
+.single-product .entry-summary h1,
+.widget h2.widget-title,
+#secondary h2.widget-title,
+#sidebar-page h2.widget-title {
+	color: $color__headline-main;
+	font-family: $font__headline;
+}
+
+cite,
+blockquote {
+	color: $color__headline-main;
+	font-family: $font__headline;
+}
+
+.entry-summary,
+.widget,
+.title-footer,
+.entry-header p.intro,
+.entry-content,
+.entry-content p,
+.entry-content table,
+.entry-content dl,
+.entry-content ul,
+.entry-content ol,
+p.section-about-text,
+p.text-big,
+p.text-small,
+.entry-content blockquote p,
+.entry-content p span.uppercase,
+.section-about-column-two .social-nav ul li a,
+.section-about-column-one p cite,
+.widget_mc4wp_form_widget input[type="email"],
+.widget_mc4wp_form_widget input[type="submit"],
+.jetpack_subscription_widget #subscribe-email input[type="email"],
+.jetpack_subscription_widget #subscribe-submit input[type="submit"],
+.contact-form input[type="submit"],
+input,
+textarea,
+.site-content div.wpcf7 input,
+.site-content div.wpcf7 textarea,
+.site-content div.wpcf7 p,
+a.standard-btn,
+.big-instagram-wrap .clear,
+.uku-standard.blog-classic .more-link,
+.widget_mc4wp_form_widget input[type="text"] {
+	font-family: $font__content;
+}
+
+.entry-header h2.entry-title,
+#secondary h2.widget-title,
+#sidebar-page h2.widget-title {
+	color: $color__text-main;
+}
+
+.entry-meta a,
+.entry-cats a {
+	color: $color__middle-blue;
+}
+
+.entry-header h2.entry-title a {
+	color: $color__headline-main;
+	font-family: $font__headline;
+
+	&:hover {
+		color: inherit;
+		text-decoration: underline;
+	}
+}

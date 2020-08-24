@@ -1,0 +1,18 @@
+{
+  "name": "uku-drk",
+  "version": "1.0.0",
+  "description": "UKU Child Theme for DRK-Landesverband Brandenburg e.V.",
+  "author": "VCAT Consulting GmbH",
+  "license": "GPL-3.0-or-later",
+  "keywords": [
+    "WordPress",
+    "Theme"
+  ],
+  "devDependencies": {
+    "node-sass": "^4.14.0"
+  },
+  "scripts": {
+    "watch": "node-sass scss/ -o ./ --source-map true --output-style expanded --indent-type tab --indent-width 1 -w",
+    "compile:css": "node-sass scss/ -o ./ && stylelint '*.css' --fix || true && stylelint '*.css' --fix"
+  }
+}
