@@ -178,11 +178,20 @@ a.standard-btn,
 /*--------------------------------------------------------------
 # Components
 --------------------------------------------------------------*/
+.custom-logo-wrap {
+	line-height: 0;
+}
+
+.custom-logo-wrap a.custom-logo-link img {
+	width: 100%;
+	max-width: 50%;
+	max-height: 40px;
+}
+
 @media screen and (min-width: 66.25em) {
-	.custom-logo-wrap a.custom-logo-link img {
-		width: 100%;
-		max-width: 50%;
-		max-height: unset;
+	.sticky-header .custom-logo-wrap a.custom-logo-link img {
+		max-width: unset;
+		padding: 3px 0;
 	}
 }
 

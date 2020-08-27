@@ -1,7 +1,20 @@
-@media screen and (min-width: 66.25em) {
-	.custom-logo-wrap a.custom-logo-link img {
+.custom-logo-wrap {
+	line-height: 0;
+
+	a.custom-logo-link img {
+
 		width: 100%;
 		max-width: 50%;
-		max-height: unset;
+		max-height: 40px;
+
+		@media screen and (min-width: 66.25em) {
+
+			.sticky-header & {
+				max-width: unset;
+				padding: 3px 0;
+			}
+
+		}
+
 	}
 }
