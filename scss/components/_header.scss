@@ -8,6 +8,7 @@
 		max-height: 40px;
 
 		@media screen and (min-width: 66.25em) {
+			max-height: unset;
 
 			.sticky-header & {
 				max-width: unset;

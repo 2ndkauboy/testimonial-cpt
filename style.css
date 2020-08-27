@@ -189,6 +189,9 @@ a.standard-btn,
 }
 
 @media screen and (min-width: 66.25em) {
+	.custom-logo-wrap a.custom-logo-link img {
+		max-height: unset;
+	}
 	.sticky-header .custom-logo-wrap a.custom-logo-link img {
 		max-width: unset;
 		padding: 3px 0;
