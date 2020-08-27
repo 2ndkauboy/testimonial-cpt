@@ -22,13 +22,21 @@ function uku_drk_theme_enqueue_styles() {
 	);
 
 	wp_enqueue_style(
-		'uku-tgzpm-style',
+		'uku-drk-style',
 		get_stylesheet_directory_uri() . $main_css_file,
 		array( 'uku-style' ),
 		$modified
 	);
 }
 add_action( 'wp_enqueue_scripts', 'uku_drk_theme_enqueue_styles' );
+
+/**
+ * Overwrite some parent theme settings.
+ */
+function uku_drk_after_setup_theme() {
+	add_theme_support( 'custom-logo' );
+}
+add_action( 'after_setup_theme', 'uku_drk_after_setup_theme', 11 );
 
 /**
  * Dequeue parent theme Google Fonts.

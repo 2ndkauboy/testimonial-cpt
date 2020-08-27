@@ -97,7 +97,19 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+h1.site-title,
+p.site-title,
+.entry-content h1,
+.entry-content h2,
+.entry-content h3,
+.entry-content h4,
+.entry-content h5,
+div.sharedaddy h3.sd-title,
+.single-product .entry-summary h1,
+.widget h2.widget-title,
+#secondary h2.widget-title,
+#sidebar-page h2.widget-title {
 	color: #e46450;
 	font-family: "Merriweather", Georgia, Times, "Times New Roman", serif;
 }
@@ -108,8 +120,6 @@ blockquote {
 	font-family: "Merriweather", Georgia, Times, "Times New Roman", serif;
 }
 
-h1.site-title,
-p.site-title,
 .entry-summary,
 .widget,
 .title-footer,
@@ -123,8 +133,6 @@ p.site-title,
 p.section-about-text,
 p.text-big,
 p.text-small,
-#secondary h2.widget-title,
-#sidebar-page h2.widget-title,
 .entry-content blockquote p,
 .entry-content p span.uppercase,
 .section-about-column-two .social-nav ul li a,
@@ -140,15 +148,7 @@ textarea,
 .site-content div.wpcf7 textarea,
 .site-content div.wpcf7 p,
 a.standard-btn,
-div.sharedaddy h3.sd-title,
-.widget h2.widget-title,
-.entry-content h1,
-.entry-content h2,
-.entry-content h3,
-.entry-content h4,
-.entry-content h5,
 .big-instagram-wrap .clear,
-.single-product .entry-summary h1,
 .uku-standard.blog-classic .more-link,
 .widget_mc4wp_form_widget input[type="text"] {
 	font-family: HelveticaNeueLT, "Helvetica Neue", OpenSans, Arial, Helvetica, sans-serif;
@@ -178,6 +178,14 @@ div.sharedaddy h3.sd-title,
 /*--------------------------------------------------------------
 # Components
 --------------------------------------------------------------*/
+@media screen and (min-width: 66.25em) {
+	.custom-logo-wrap a.custom-logo-link img {
+		width: 100%;
+		max-width: 50%;
+		max-height: unset;
+	}
+}
+
 .single-post .entry-header p.intro,
 .entry-meta,
 .entry-meta a,
