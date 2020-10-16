@@ -5,7 +5,7 @@
  Author:      VCAT Consulting GmbH
  Author URI:  https://www.vcat.de/
  Template:    uku
- Version:     1.0.0
+ Version:     1.1.0
  License:     GNU General Public License v2 or later
  License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
@@ -178,23 +178,230 @@ a.standard-btn,
 /*--------------------------------------------------------------
 # Components
 --------------------------------------------------------------*/
-.custom-logo-wrap {
-	line-height: 0;
+#site-branding {
+	display: flex;
 }
 
-.custom-logo-wrap a.custom-logo-link img {
+@media screen and (min-width: 112.5em) {
+	#site-branding {
+		width: 70%;
+		/* -- 830px at 1440px ---*/
+	}
+}
+
+.sticky-header #site-branding {
+	padding-top: 0;
+}
+
+/*
+.custom-logo-wrap {
+
+	.site-header-content & {
+		text-align: left;
+		margin: 0;
+	}
+
+	a.custom-logo-link img {
+
+		width: 100%;
+		max-width: 50%;
+		max-height: 40px;
+
+		@media screen and (min-width: 66.25em) {
+			max-height: unset;
+
+			.sticky-header & {
+				max-width: unset;
+				padding: 3px 0;
+			}
+		}
+	}
+}
+*/
+.custom-logo-wrap {
+	margin-left: 0;
+	margin-right: 5%;
+}
+
+@media screen and (min-width: 66.25em) {
+	.custom-logo-wrap {
+		margin-right: 10%;
+	}
+}
+
+#header-social,
+#overlay-open,
+.search-open {
+	position: relative;
+	top: auto;
+	right: auto;
+	left: auto;
+	margin: 0;
+}
+
+#overlay-open,
+.search-open {
+	width: 40px;
+	height: 40px;
+	text-align: center;
+}
+
+@media screen and (min-width: 66.25em) {
+	#overlay-open,
+	.search-open {
+		width: 45px;
+		height: auto;
+	}
+}
+
+#overlay-open:before,
+.search-open:before {
+	font-size: 20px;
+}
+
+@media screen and (min-width: 66.25em) {
+	#overlay-open:before,
+	.search-open:before {
+		font-size: 25px;
+	}
+}
+
+@media screen and (min-width: 66.25em) {
+	#header-social {
+		display: flex;
+	}
+}
+
+.social-nav {
+	padding-left: 5px;
+}
+
+@media screen and (min-width: 66.25em) {
+	.social-nav {
+		padding-left: 0;
+	}
+}
+
+.social-nav ul li a {
+	padding-top: 10px;
+}
+
+@media screen and (min-width: 66.25em) {
+	.social-nav ul li a {
+		padding-top: 0px;
+	}
+}
+
+@media screen and (min-width: 66.25em) {
+	.social-nav ul li a:before {
+		padding-top: 18px;
+	}
+}
+
+h1.site-title {
+	padding-right: 0;
+}
+
+@media screen and (min-width: 66.25em) {
+	h1.site-title {
+		padding-right: 55px;
+	}
+}
+
+h1.site-title a {
+	display: flex;
+	color: #ed1c24;
+	font-size: 1.8rem;
+	line-height: 1;
+}
+
+@media screen and (min-width: 66.25em) {
+	h1.site-title a {
+		font-size: 2.5rem;
+	}
+}
+
+p.site-description {
+	display: block;
+	margin: 0;
+	text-align: left;
+	text-transform: none;
+	font-size: 0.6rem;
+	color: #000;
+}
+
+@media screen and (min-width: 66.25em) {
+	p.site-description {
+		font-size: 0.675rem;
+	}
+}
+
+.header-title-buttons {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.header-buttons {
+	display: flex;
+	color: #0075a9;
+}
+
+@media screen and (min-width: 66.25em) {
+	#desktop-navigation {
+		display: flex;
+		width: 100%;
+	}
+	#desktop-navigation ul li {
+		padding-left: 0;
+	}
+}
+
+.sticky-header #site-branding {
+	display: flex;
+	align-items: center;
+}
+
+.sticky-header a.custom-logo-link img {
 	width: 100%;
 	max-width: 50%;
 	max-height: 40px;
 }
 
 @media screen and (min-width: 66.25em) {
-	.custom-logo-wrap a.custom-logo-link img {
+	.sticky-header a.custom-logo-link img {
 		max-height: unset;
-	}
-	.sticky-header .custom-logo-wrap a.custom-logo-link img {
 		max-width: unset;
 		padding: 3px 0;
+	}
+}
+
+.sticky-header .header-tile {
+	padding: 5px 0 5px 35px;
+}
+
+.sticky-header h1.site-title a {
+	font-size: 1.8rem;
+}
+
+.sticky-header p.site-description {
+	margin: 0;
+	font-size: 0.6rem;
+}
+
+@media screen and (min-width: 66.25em) {
+	.overlay-show .inner-offcanvas-wrap {
+		left: auto;
+		right: 0;
+	}
+}
+
+@media screen and (min-width: 66.25em) {
+	.overlay-show .inner-offcanvas-wrap #overlay-close {
+		top: 18px;
+		left: auto;
+		right: -17px;
 	}
 }
 

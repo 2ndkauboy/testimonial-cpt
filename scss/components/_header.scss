@@ -1,5 +1,22 @@
+#site-branding {
+	display: flex;
+
+	@media screen and (min-width: 112.5em) {
+		width: 70%; /* -- 830px at 1440px ---*/
+	}
+
+	.sticky-header & {
+		padding-top: 0;
+	}
+}
+
+/*
 .custom-logo-wrap {
-	line-height: 0;
+
+	.site-header-content & {
+		text-align: left;
+		margin: 0;
+	}
 
 	a.custom-logo-link img {
 
@@ -14,8 +31,177 @@
 				max-width: unset;
 				padding: 3px 0;
 			}
+		}
+	}
+}
+*/
 
+.custom-logo-wrap {
+	margin-left: 0;
+	margin-right: 5%;
+
+	@media screen and (min-width: 66.25em) {
+		margin-right: 10%;
+	}
+}
+
+#header-social,
+#overlay-open,
+.search-open {
+	position: relative;
+	top: auto;
+	right: auto;
+	left: auto;
+	margin: 0;
+}
+
+#overlay-open,
+.search-open {
+	width: 40px;
+	height: 40px;
+	text-align: center;
+
+	@media screen and (min-width: 66.25em) {
+		width: 45px;
+		height: auto;
+	}
+
+	&:before {
+		font-size: 20px;
+
+		@media screen and (min-width: 66.25em) {
+			font-size: 25px;
+		}
+	}
+}
+
+#header-social {
+	@media screen and (min-width: 66.25em) {
+		display: flex;
+	}
+}
+
+.social-nav {
+	padding-left: 5px;
+
+	@media screen and (min-width: 66.25em) {
+		padding-left: 0;
+	}
+
+	ul li a {
+		padding-top: 10px;
+
+		@media screen and (min-width: 66.25em) {
+			padding-top: 0px;
 		}
 
+		&:before {
+			@media screen and (min-width: 66.25em) {
+				padding-top: 18px;
+			}
+		}
+	}
+}
+
+h1.site-title {
+	padding-right: 0;
+
+	@media screen and (min-width: 66.25em) {
+		padding-right: 55px;
+	}
+
+	a {
+		display: flex;
+		color: #ed1c24;
+		font-size: 1.8rem;
+		line-height: 1;
+
+		@media screen and (min-width: 66.25em) {
+			font-size: 2.5rem;
+		}
+	}
+}
+
+p.site-description {
+	display: block;
+	margin: 0;
+	text-align: left;
+	text-transform: none;
+	font-size: 0.6rem;
+	color: #000;
+
+	@media screen and (min-width: 66.25em) {
+		font-size: 0.675rem;
+	}
+}
+
+.header-title-buttons {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.header-buttons {
+	display: flex;
+	color: #0075a9;
+}
+
+#desktop-navigation {
+	@media screen and (min-width: 66.25em) {
+		display: flex;
+		width: 100%;
+
+		ul li {
+			padding-left: 0;
+		}
+	}
+}
+
+.sticky-header {
+	#site-branding {
+		display: flex;
+		align-items: center;
+	}
+
+	a.custom-logo-link img {
+
+		width: 100%;
+		max-width: 50%;
+		max-height: 40px;
+
+		@media screen and (min-width: 66.25em) {
+			max-height: unset;
+			max-width: unset;
+			padding: 3px 0;
+		}
+	}
+
+	.header-tile {
+		padding: 5px 0 5px 35px;
+	}
+
+	h1.site-title a {
+		font-size: 1.8rem;
+	}
+
+	p.site-description {
+		margin: 0;
+		font-size: 0.6rem;
+	}
+}
+
+.overlay-show .inner-offcanvas-wrap {
+	@media screen and (min-width: 66.25em) {
+		left: auto;
+		right: 0;
+	}
+
+	#overlay-close {
+		@media screen and (min-width: 66.25em) {
+			top: 18px;
+			left: auto;
+			right: -17px;
+		}
 	}
 }
