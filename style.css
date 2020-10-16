@@ -5,7 +5,7 @@
  Author:      VCAT Consulting GmbH
  Author URI:  https://www.vcat.de/
  Template:    uku
- Version:     1.1.0
+ Version:     1.1.1
  License:     GNU General Public License v2 or later
  License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
@@ -272,28 +272,28 @@ a.standard-btn,
 	}
 }
 
-.social-nav {
+.site-header .social-nav {
 	padding-left: 5px;
 }
 
 @media screen and (min-width: 66.25em) {
-	.social-nav {
+	.site-header .social-nav {
 		padding-left: 0;
 	}
 }
 
-.social-nav ul li a {
+.site-header .social-nav ul li a {
 	padding-top: 10px;
 }
 
 @media screen and (min-width: 66.25em) {
-	.social-nav ul li a {
+	.site-header .social-nav ul li a {
 		padding-top: 0px;
 	}
 }
 
 @media screen and (min-width: 66.25em) {
-	.social-nav ul li a:before {
+	.site-header .social-nav ul li a:before {
 		padding-top: 18px;
 	}
 }
