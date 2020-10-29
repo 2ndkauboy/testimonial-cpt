@@ -5,7 +5,7 @@
  Author:      VCAT Consulting GmbH
  Author URI:  https://www.vcat.de/
  Template:    uku
- Version:     1.1.1
+ Version:     1.1.2
  License:     GNU General Public License v2 or later
  License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
@@ -193,31 +193,6 @@ a.standard-btn,
 	padding-top: 0;
 }
 
-/*
-.custom-logo-wrap {
-
-	.site-header-content & {
-		text-align: left;
-		margin: 0;
-	}
-
-	a.custom-logo-link img {
-
-		width: 100%;
-		max-width: 50%;
-		max-height: 40px;
-
-		@media screen and (min-width: 66.25em) {
-			max-height: unset;
-
-			.sticky-header & {
-				max-width: unset;
-				padding: 3px 0;
-			}
-		}
-	}
-}
-*/
 .custom-logo-wrap {
 	margin-left: 0;
 	margin-right: 5%;
@@ -288,7 +263,7 @@ a.standard-btn,
 
 @media screen and (min-width: 66.25em) {
 	.site-header .social-nav ul li a {
-		padding-top: 0px;
+		padding-top: 0;
 	}
 }
 
@@ -358,6 +333,10 @@ p.site-description {
 	}
 }
 
+#desktop-navigation ul li a {
+	text-transform: none;
+}
+
 .sticky-header #site-branding {
 	display: flex;
 	align-items: center;
@@ -391,6 +370,12 @@ p.site-description {
 }
 
 @media screen and (min-width: 66.25em) {
+	.sticky-header p.site-description {
+		padding-top: 4px;
+	}
+}
+
+@media screen and (min-width: 66.25em) {
 	.overlay-show .inner-offcanvas-wrap {
 		left: auto;
 		right: 0;
@@ -402,6 +387,20 @@ p.site-description {
 		top: 18px;
 		left: auto;
 		right: -17px;
+	}
+}
+
+@media screen and (min-width: 66.25em) {
+	.section-one-column-one .entry-header h2.entry-title {
+		font-size: 2rem;
+		line-height: 1.5;
+	}
+}
+
+@media screen and (min-width: 66.25em) {
+	.section-about-column-one p,
+	.section-one-column-one .type-post .entry-summary {
+		font-size: 1.5rem;
 	}
 }
 

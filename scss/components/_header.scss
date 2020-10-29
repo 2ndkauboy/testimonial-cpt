@@ -10,32 +10,6 @@
 	}
 }
 
-/*
-.custom-logo-wrap {
-
-	.site-header-content & {
-		text-align: left;
-		margin: 0;
-	}
-
-	a.custom-logo-link img {
-
-		width: 100%;
-		max-width: 50%;
-		max-height: 40px;
-
-		@media screen and (min-width: 66.25em) {
-			max-height: unset;
-
-			.sticky-header & {
-				max-width: unset;
-				padding: 3px 0;
-			}
-		}
-	}
-}
-*/
-
 .custom-logo-wrap {
 	margin-left: 0;
 	margin-right: 5%;
@@ -92,7 +66,7 @@
 		padding-top: 10px;
 
 		@media screen and (min-width: 66.25em) {
-			padding-top: 0px;
+			padding-top: 0;
 		}
 
 		&:before {
@@ -156,6 +130,10 @@ p.site-description {
 			padding-left: 0;
 		}
 	}
+
+	ul li a {
+		text-transform: none;
+	}
 }
 
 .sticky-header {
@@ -188,6 +166,10 @@ p.site-description {
 	p.site-description {
 		margin: 0;
 		font-size: 0.6rem;
+
+		@media screen and (min-width: 66.25em) {
+			padding-top: 4px;
+		}
 	}
 }
 

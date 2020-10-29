@@ -1,3 +1,17 @@
+
+.section-one-column-one .entry-header h2.entry-title {
+	@media screen and (min-width: 66.25em) {
+		font-size: 2rem;
+		line-height: 1.5;
+	}
+}
+.section-about-column-one p,
+.section-one-column-one .type-post .entry-summary {
+	@media screen and (min-width: 66.25em) {
+		font-size: 1.5rem;
+	}
+}
+
 .single-post .entry-header p.intro,
 .entry-meta,
 .entry-meta a,
