@@ -39,7 +39,7 @@
     <!-- Exclude external resources -->
     <exclude-pattern>*/node_modules/*</exclude-pattern>
     <!-- Exclude files, that were copied from the parent theme and only slightly modified -->
-    <!--<exclude-pattern>footer.php</exclude-pattern>-->
+    <exclude-pattern>header.php</exclude-pattern>
 
     <!--
     #############################################################################
