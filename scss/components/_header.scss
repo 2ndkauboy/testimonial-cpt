@@ -122,6 +122,16 @@ p.site-description {
 	color: #0075a9;
 }
 
+.desktop-search {
+	@media screen and (min-width: 66.25em) {
+		background-color: rgba($color__middle-blue, .75);
+
+		.search-field::placeholder {
+			color: rgba($color__light-gray, .75);
+		}
+	}
+}
+
 #desktop-navigation {
 	@media screen and (min-width: 66.25em) {
 		display: flex;
@@ -183,6 +193,25 @@ p.site-description {
 	@media screen and (min-width: 66.25em) {
 		left: auto;
 		right: 0;
+		background-color: $color__middle-blue;
+	}
+
+	a {
+		@media screen and (min-width: 66.25em) {
+			color: white;
+		}
+	}
+
+	#overlay-nav {
+		@media screen and (min-width: 66.25em) {
+			border-color: white;
+		}
+
+		ul li {
+			@media screen and (min-width: 66.25em) {
+				border-color: white;
+			}
+		}
 	}
 
 	#overlay-close {
@@ -190,6 +219,11 @@ p.site-description {
 			top: 18px;
 			left: auto;
 			right: -17px;
+			color: white;
+
+			&:hover {
+				opacity: .5;
+			}
 		}
 	}
 }

@@ -12,7 +12,6 @@
     "node-sass": "^4.14.0"
   },
   "scripts": {
-    "watch": "node-sass scss/ -o ./ --source-map true --output-style expanded --indent-type tab --indent-width 1 -w",
-    "compile:css": "node-sass scss/ -o ./ && stylelint '*.css' --fix || true && stylelint '*.css' --fix"
+    "watch": "node-sass scss/ -o ./ --source-map true --output-style expanded --indent-type tab --indent-width 1 -w"
   }
 }

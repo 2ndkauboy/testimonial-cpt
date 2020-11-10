@@ -1,13 +1,14 @@
 .section-one-column-one .entry-header h2.entry-title {
 	@media screen and (min-width: 66.25em) {
-		font-size: 2rem;
-		line-height: 1.5;
+		font-size: 2.4rem;
+		line-height: 1.2;
 	}
 }
 .section-about-column-one p,
 .section-one-column-one .type-post .entry-summary {
 	@media screen and (min-width: 66.25em) {
-		font-size: 1.5rem;
+		font-size: 1.2rem;
+		line-height: 1.4;
 	}
 }
 
@@ -32,12 +33,43 @@
 .page-fullwidth #primary .hentry,
 .page-template-no-sidebar #primary .hentry,
 .error404 #primary .page {
-	border-top: 1px solid $color__text-main;
+	border-top: 1px solid #ddd;
+	color: $color__middle-blue;
+
+	@media screen and (min-width: 66.25em) {
+		font-size: 1.75rem;
+	}
+}
+
+.blog-wrap h3.blog-title,
+.archive-header h1.archive-title {
+	border-top: none;
+}
+
+.featured-slider .entry-header h2.entry-title,
+.single-post .entry-header h1.entry-title,
+#front-section-four .entry-header h2.entry-title {
+	@media screen and (min-width: 66.25em) {
+		font-size: 3.2rem;
+		line-height: 1.2;
+	}
+}
+
+.single-post .hentry .entry-meta,
+.single-attachment .entry-meta {
+	border-top: none;
+	font-size: 0.8rem;
+	line-height: 1.6;
 }
 
 .single-post .entry-content blockquote,
 .page .entry-content blockquote {
 	border-color: $color__text-main;
+}
+
+#comments h3.comments-title,
+#comments #respond h3#reply-title {
+	text-transform: none;
 }
 
 .widget_search input[type="submit"],
