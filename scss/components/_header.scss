@@ -32,12 +32,10 @@
 #overlay-open,
 .search-open {
 	width: 40px;
-	height: 40px;
 	text-align: center;
 
 	@media screen and (min-width: 66.25em) {
 		width: 45px;
-		height: auto;
 	}
 
 	&:before {
@@ -131,12 +129,30 @@ p.site-description {
 		}
 	}
 }
+.desktop-navigation-container {
+	width: 87.5%;
+	margin: 0 auto;
+
+	@media screen and (min-width: 112.5em) {
+		width: 70%;
+	}
+}
+
+.desktop-navigation-container__inner {
+	display: flex;
+
+	&:before {
+		content: "";
+		display: block;
+		width: 260px;
+		margin-right: 10%;
+	}
+}
 
 #desktop-navigation {
-	@media screen and (min-width: 66.25em) {
-		display: flex;
-		width: 100%;
+	margin-top: -28px;
 
+	@media screen and (min-width: 66.25em) {
 		ul li {
 			padding-left: 0;
 		}
@@ -207,7 +223,9 @@ p.site-description {
 			border-color: white;
 		}
 
-		ul li {
+		ul li,
+		ul ul.sub-menu,
+		ul ul.children {
 			@media screen and (min-width: 66.25em) {
 				border-color: white;
 			}

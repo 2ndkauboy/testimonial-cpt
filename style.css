@@ -5,7 +5,7 @@
  Author:      VCAT Consulting GmbH
  Author URI:  https://www.vcat.de/
  Template:    uku
- Version:     1.2.1
+ Version:     1.2.2
  License:     GNU General Public License v2 or later
  License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
@@ -217,7 +217,6 @@ a.standard-btn,
 #overlay-open,
 .search-open {
 	width: 40px;
-	height: 40px;
 	text-align: center;
 }
 
@@ -225,7 +224,6 @@ a.standard-btn,
 	#overlay-open,
 	.search-open {
 		width: 45px;
-		height: auto;
 	}
 }
 
@@ -336,11 +334,33 @@ p.site-description {
 	}
 }
 
-@media screen and (min-width: 66.25em) {
-	#desktop-navigation {
-		display: flex;
-		width: 100%;
+.desktop-navigation-container {
+	width: 87.5%;
+	margin: 0 auto;
+}
+
+@media screen and (min-width: 112.5em) {
+	.desktop-navigation-container {
+		width: 70%;
 	}
+}
+
+.desktop-navigation-container__inner {
+	display: flex;
+}
+
+.desktop-navigation-container__inner:before {
+	content: "";
+	display: block;
+	width: 260px;
+	margin-right: 10%;
+}
+
+#desktop-navigation {
+	margin-top: -28px;
+}
+
+@media screen and (min-width: 66.25em) {
 	#desktop-navigation ul li {
 		padding-left: 0;
 	}
@@ -348,6 +368,15 @@ p.site-description {
 
 #desktop-navigation ul li a {
 	text-transform: none;
+}
+
+@media screen and (min-width: 66.25em) {
+	#desktop-navigation ul li.focus > ul.sub-menu,
+	#desktop-navigation ul li.focus > ul.children,
+	#desktop-navigation ul li:focus > ul.sub-menu,
+	#desktop-navigation ul li:focus > ul.children {
+		display: block !important;
+	}
 }
 
 .sticky-header #site-branding {
@@ -414,7 +443,9 @@ p.site-description {
 }
 
 @media screen and (min-width: 66.25em) {
-	.overlay-show .inner-offcanvas-wrap #overlay-nav ul li {
+	.overlay-show .inner-offcanvas-wrap #overlay-nav ul li,
+	.overlay-show .inner-offcanvas-wrap #overlay-nav ul ul.sub-menu,
+	.overlay-show .inner-offcanvas-wrap #overlay-nav ul ul.children {
 		border-color: white;
 	}
 }

@@ -72,14 +72,18 @@
 							</nav><!-- end #header-social -->
 						<?php endif; ?>
 					</div><!-- end .header-buttons -->
+				</div><!-- .header-title-buttons -->
+			</div><!-- end #site-branding -->
 
-					<?php if ( '' == get_theme_mod( 'uku_main_design' ) || 'standard' == get_theme_mod( 'uku_main_design' ) ) : ?>
+			<?php if ( '' == get_theme_mod( 'uku_main_design' ) || 'standard' == get_theme_mod( 'uku_main_design' ) ) : ?>
+				<div class="desktop-navigation-container">
+					<div class="desktop-navigation-container__inner">
 						<nav id="desktop-navigation" class="desktop-navigation cf" role="navigation">
 							<?php wp_nav_menu( array( 'theme_location' => 'primary', 'container' => false,)); ?>
 						</nav><!-- .main-navigation -->
-					<?php endif; ?>
-				</div><!-- .header-title-buttons -->
-			</div><!-- end #site-branding -->
+					</div>
+				</div>
+			<?php endif; ?>
 
 			<?php if ( '' == get_theme_mod( 'uku_hidesearch' ) ) : ?>
 				<div class="desktop-search">
