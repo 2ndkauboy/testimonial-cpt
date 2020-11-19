@@ -42,6 +42,21 @@
 	}
 }
 
+.search-no-results .entry-title {
+	padding: 3px 0 20px;
+	color: $color__middle-blue;
+	font-size: 1.25rem;
+
+	@media screen and (min-width: 48em) {
+		font-size: 1.75rem;
+	}
+}
+
+.front-section .type-post,
+#comments h3.comments-title {
+	border-color: #ddd;
+}
+
 .blog-wrap h3.blog-title,
 .archive-header h1.archive-title {
 	border-top: none;
@@ -65,7 +80,11 @@
 
 .single-post .entry-content blockquote,
 .page .entry-content blockquote {
-	border-color: $color__text-main;
+	border: 0 none;
+	color: $color__dark-blue;
+	font-family: $font__headline;
+	font-weight: normal;
+	font-style: italic;
 }
 
 #comments h3.comments-title,
@@ -78,7 +97,7 @@
 input[type="button"],
 input[type="submit"],
 input#submit {
-	border-color: $color__text-main;
+	border-color: #ddd;
 
 	&:hover {
 		background-color: $color__soft-red;
@@ -87,7 +106,7 @@ input#submit {
 }
 
 .pagination {
-	border-color: $color__text-main;
+	border-color: #ddd;
 	color: $color__text-main;
 
 	a {
@@ -96,5 +115,14 @@ input#submit {
 		&:hover {
 			color: $color__link-hover;
 		}
+	}
+}
+
+
+.search-no-results .blog-wrap {
+	padding-top: 35px;
+
+	@media screen and (min-width: 48.000em) {
+		padding-top: 60px;
 	}
 }

@@ -370,13 +370,14 @@ p.site-description {
 	text-transform: none;
 }
 
-@media screen and (min-width: 66.25em) {
-	#desktop-navigation ul li.focus > ul.sub-menu,
-	#desktop-navigation ul li.focus > ul.children,
-	#desktop-navigation ul li:focus > ul.sub-menu,
-	#desktop-navigation ul li:focus > ul.children {
-		display: block !important;
-	}
+#desktop-navigation ul ul.sub-menu,
+#desktop-navigation ul ul.children {
+	background-color: #007cba;
+}
+
+#desktop-navigation ul ul.sub-menu:before,
+#desktop-navigation ul ul.children:before {
+	color: #007cba;
 }
 
 .sticky-header #site-branding {
@@ -516,6 +517,23 @@ p.site-description {
 	}
 }
 
+.search-no-results .entry-title {
+	padding: 3px 0 20px;
+	color: #007cba;
+	font-size: 1.25rem;
+}
+
+@media screen and (min-width: 48em) {
+	.search-no-results .entry-title {
+		font-size: 1.75rem;
+	}
+}
+
+.front-section .type-post,
+#comments h3.comments-title {
+	border-color: #ddd;
+}
+
 .blog-wrap h3.blog-title,
 .archive-header h1.archive-title {
 	border-top: none;
@@ -539,7 +557,11 @@ p.site-description {
 
 .single-post .entry-content blockquote,
 .page .entry-content blockquote {
-	border-color: #554f4a;
+	border: 0 none;
+	color: #002d55;
+	font-family: "Merriweather", Georgia, Times, "Times New Roman", serif;
+	font-weight: normal;
+	font-style: italic;
 }
 
 #comments h3.comments-title,
@@ -552,7 +574,7 @@ p.site-description {
 input[type="button"],
 input[type="submit"],
 input#submit {
-	border-color: #554f4a;
+	border-color: #ddd;
 }
 
 .widget_search input[type="submit"]:hover,
@@ -565,7 +587,7 @@ input#submit:hover {
 }
 
 .pagination {
-	border-color: #554f4a;
+	border-color: #ddd;
 	color: #554f4a;
 }
 
@@ -575,6 +597,16 @@ input#submit:hover {
 
 .pagination a:hover {
 	color: #21b5ff;
+}
+
+.search-no-results .blog-wrap {
+	padding-top: 35px;
+}
+
+@media screen and (min-width: 48em) {
+	.search-no-results .blog-wrap {
+		padding-top: 60px;
+	}
 }
 
 #colophon {

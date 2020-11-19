@@ -161,6 +161,14 @@ p.site-description {
 	ul li a {
 		text-transform: none;
 	}
+	ul ul.sub-menu,
+	ul ul.children {
+		background-color: $color__middle-blue;
+
+		&:before {
+			color: $color__middle-blue;
+		}
+	}
 }
 
 .sticky-header {
