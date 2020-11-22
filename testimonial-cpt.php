@@ -13,3 +13,5 @@
  * Text Domain:       testimonial-cpt
  * Domain Path:       /languages
  */
+
+require 'post-types/testimonial.php';
