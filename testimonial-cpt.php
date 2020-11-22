@@ -15,3 +15,4 @@
  */
 
 require 'post-types/testimonial.php';
+require 'taxonomies/testimonial_type.php';
