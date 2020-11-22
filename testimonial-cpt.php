@@ -1,5 +1,12 @@
 <?php
 /**
+ * Testimonial Post Type
+ *
+ * @package           testimonial-cpt
+ * @author            Bernhard Kau
+ * @license           GPL-2.0-or-later
+ *
+ * @wordpress-plugin
  * Plugin Name:       Testimonial Post Type
  * Plugin URI:        https://github.com/2ndkauboy/testimonial-cpt/
  * Description:       Register a post type to manage testimonials.
@@ -15,4 +22,4 @@
  */
 
 require 'post-types/testimonial.php';
-require 'taxonomies/testimonial_type.php';
+require 'taxonomies/testimonial-type.php';
