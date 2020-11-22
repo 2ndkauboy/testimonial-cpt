@@ -85,3 +85,30 @@ function testimonial_updated_messages( $messages ) {
 	return $messages;
 }
 add_filter( 'post_updated_messages', 'testimonial_updated_messages' );
+
+/**
+ * Sets the bulk post updated messages for the `testimonial` post type.
+ *
+ * @param  array $bulk_messages Arrays of messages, each keyed by the corresponding post type. Messages are
+ *                              keyed with 'updated', 'locked', 'deleted', 'trashed', and 'untrashed'.
+ * @param  int[] $bulk_counts   Array of item counts for each message, used to build internationalized strings.
+ * @return array Bulk messages for the `testimonial` post type.
+ */
+function testimonial_bulk_updated_messages( $bulk_messages, $bulk_counts ) {
+	$bulk_messages['testimonial'] = array(
+		/* translators: %s: Number of testimonials. */
+		'updated'   => _n( '%s testimonial updated.', '%s testimonials updated.', $bulk_counts['updated'], 'testimonial-cpt' ),
+		'locked'    => ( 1 === $bulk_counts['locked'] ) ? __( '1 testimonial not updated, somebody is editing it.', 'testimonial-cpt' ) :
+						/* translators: %s: Number of testimonials. */
+						_n( '%s testimonial not updated, somebody is editing it.', '%s testimonials not updated, somebody is editing them.', $bulk_counts['locked'], 'testimonial-cpt' ),
+		/* translators: %s: Number of testimonials. */
+		'deleted'   => _n( '%s testimonial permanently deleted.', '%s testimonials permanently deleted.', $bulk_counts['deleted'], 'testimonial-cpt' ),
+		/* translators: %s: Number of testimonials. */
+		'trashed'   => _n( '%s testimonial moved to the Trash.', '%s testimonials moved to the Trash.', $bulk_counts['trashed'], 'testimonial-cpt' ),
+		/* translators: %s: Number of testimonials. */
+		'untrashed' => _n( '%s testimonial restored from the Trash.', '%s testimonials restored from the Trash.', $bulk_counts['untrashed'], 'testimonial-cpt' ),
+	);
+
+	return $bulk_messages;
+}
+add_filter( 'bulk_post_updated_messages', 'testimonial_bulk_updated_messages', 10, 2 );
