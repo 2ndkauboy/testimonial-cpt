@@ -52,9 +52,50 @@ function testimonial_init() {
 			'show_in_rest'          => true,
 			'rest_base'             => 'testimonial',
 			'rest_controller_class' => 'WP_REST_Posts_Controller',
+			'template'              => array(
+				array(
+					'core/paragraph',
+					array(
+						'placeholder' => __( 'Testimonial ...', 'testimonial-cpt' ),
+					),
+				),
+				array(
+					'core/columns',
+					array(),
+					array(
+						array(
+							'core/column',
+							array(),
+							array(
+								array(
+									'core/image',
+								),
+							),
+						),
+						array(
+							'core/column',
+							array(),
+							array(
+								array(
+									'core/heading',
+									array(
+										'level'       => 2,
+										'placeholder' => __( 'Name ...', 'testimonial-cpt' ),
+									),
+								),
+								array(
+									'core/paragraph',
+									array(
+										'placeholder' => __( 'Company ...', 'testimonial-cpt' ),
+									),
+								),
+							),
+						),
+					),
+				),
+			),
 		)
 	);
-
 }
 add_action( 'init', 'testimonial_init' );
 

@@ -4,350 +4,312 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Testimonial Post Type 1.0.0\n"
 "Report-Msgid-Bugs-To: https://github.com/2ndkauboy/testimonial-cpt\n"
+"POT-Creation-Date: 2020-11-30 23:48+0100\n"
+"PO-Revision-Date: 2020-11-30 23:49+0100\n"
+"Last-Translator: \n"
 "Language-Team: Bernhard Kau\n"
+"Language: de_DE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2020-11-22T17:56:31+00:00\n"
-"PO-Revision-Date: 2020-11-22 19:12+0100\n"
 "X-Generator: Poedit 2.4.2\n"
 "X-Domain: testimonial-cpt\n"
-"Last-Translator: \n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"Language: de_DE\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
+"_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;_ex:1,2c;"
+"esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
 
-#. Plugin Name of the plugin
-msgid "Testimonial Post Type"
-msgstr "Testimonial Post Type"
-
-#. Plugin URI of the plugin
-msgid "https://github.com/2ndkauboy/testimonial-cpt/"
-msgstr "https://github.com/2ndkauboy/testimonial-cpt/"
-
-#. Description of the plugin
-msgid "Register a post type to manage testimonials."
-msgstr ""
-"Registrierung eines eigenen Inhaltstyps zur Verwaltung von Testimonials."
-
-#. Author of the plugin
-msgid "Bernhard Kau"
-msgstr "Bernhard Kau"
-
-#. Author URI of the plugin
-msgid "https://kau-boys.de"
-msgstr "https://kau-boys.de"
-
-#: post-types/testimonial.php:16 post-types/testimonial.php:40
+#: ../post-types/testimonial.php:11
 msgid "Testimonials"
 msgstr "Testimonials"
 
-#: post-types/testimonial.php:17
+#: ../post-types/testimonial.php:12
 msgid "Testimonial"
 msgstr "Testimonial"
 
-#: post-types/testimonial.php:18
-msgid "All Testimonials"
-msgstr "Alle Testimonials"
+#: ../post-types/testimonial.php:22
+#| msgid "Testimonial"
+msgid "Testimonial ..."
+msgstr "Testimonial ..."
 
-#: post-types/testimonial.php:19
-msgid "Testimonial Archives"
-msgstr "Testimonial-Archive"
+#: ../post-types/testimonial.php:46
+msgid "Name ..."
+msgstr "Name ..."
 
-#: post-types/testimonial.php:20
-msgid "Testimonial Attributes"
-msgstr "Testimonial-Attribute"
+#: ../post-types/testimonial.php:52
+msgid "Company ..."
+msgstr "Unternehmen..."
 
-#: post-types/testimonial.php:21
-msgid "Insert into testimonial"
-msgstr "In das Testimonial einfügen"
-
-#: post-types/testimonial.php:22
-msgid "Uploaded to this testimonial"
-msgstr "Zu diesem Testimonial hochgeladen"
-
-#: post-types/testimonial.php:23
-msgctxt "testimonial"
-msgid "Featured Image"
-msgstr "Beitragsbild"
-
-#: post-types/testimonial.php:24
-msgctxt "testimonial"
-msgid "Set featured image"
-msgstr "Beitragsbild festlegen"
-
-#: post-types/testimonial.php:25
-msgctxt "testimonial"
-msgid "Remove featured image"
-msgstr "Beitragsbild entfernen"
-
-#: post-types/testimonial.php:26
-msgctxt "testimonial"
-msgid "Use as featured image"
-msgstr "Als Beitragsbild verwenden"
-
-#: post-types/testimonial.php:27
-msgid "Filter testimonials list"
-msgstr "Testimonialliste filtern"
-
-#: post-types/testimonial.php:28
-msgid "Testimonials list navigation"
-msgstr "Navigation der Testimonialliste"
-
-#: post-types/testimonial.php:29
-msgid "Testimonials list"
-msgstr "Testimonialliste"
-
-#: post-types/testimonial.php:30
-msgid "New Testimonial"
-msgstr "Neues Testimonial"
-
-#: post-types/testimonial.php:31
-msgid "Add New"
-msgstr "Erstellen"
-
-#: post-types/testimonial.php:32
-msgid "Add New Testimonial"
-msgstr "Neues Testimonial hinzufügen"
-
-#: post-types/testimonial.php:33
-msgid "Edit Testimonial"
-msgstr "Testimonial bearbeiten"
-
-#: post-types/testimonial.php:34
-msgid "View Testimonial"
-msgstr "Testimonial anzeigen"
-
-#: post-types/testimonial.php:35
-msgid "View Testimonials"
-msgstr "Testimonials anzeigen"
-
-#: post-types/testimonial.php:36
-msgid "Search testimonials"
-msgstr "Testimonials durchsuchen"
-
-#: post-types/testimonial.php:37
-msgid "No testimonials found"
-msgstr "Keine Testimonials gefunden"
-
-#: post-types/testimonial.php:38
-msgid "No testimonials found in trash"
-msgstr "Keine Testimonials im Papierkorb gefunden"
-
-#: post-types/testimonial.php:39
-msgid "Parent Testimonial:"
-msgstr "Übergeordnetes Testimonial:"
-
-#. translators: %s: post permalink
-#: post-types/testimonial.php:75
-msgid ""
-"Testimonial updated. <a target=\"_blank\" href=\"%s\">View testimonial</a>"
-msgstr ""
-"Testimonial aktualisiert. <a target=\"_blank\" href=\"%s\">Testimonial "
-"anzeigen</a>"
-
-#: post-types/testimonial.php:76
-msgid "Custom field updated."
-msgstr "Benutzerdefiniertes Feld aktualisiert."
-
-#: post-types/testimonial.php:77
-msgid "Custom field deleted."
-msgstr "Benutzerdefiniertes Feld gelöscht."
-
-#: post-types/testimonial.php:78
-msgid "Testimonial updated."
-msgstr "Testimonial aktualisiert."
-
-#. translators: %s: date and time of the revision
-#: post-types/testimonial.php:80
-msgid "Testimonial restored to revision from %s"
-msgstr "Testimonial aus Revision vom %s wiederhergestellt."
-
-#. translators: %s: post permalink
-#: post-types/testimonial.php:82
-msgid "Testimonial published. <a href=\"%s\">View testimonial</a>"
-msgstr "Testimonial veröffentlicht. <a href=\"%s\">Testimonial anzeigen</a>"
-
-#: post-types/testimonial.php:83
-msgid "Testimonial saved."
-msgstr "Testimonial gespeichert."
-
-#. translators: %s: post permalink
-#: post-types/testimonial.php:85
-msgid ""
-"Testimonial submitted. <a target=\"_blank\" href=\"%s\">Preview testimonial</"
-"a>"
-msgstr ""
-"Testimonial übermittelt. <a target=\"_blank\" href=\"%s\">Testimonial-"
-"Vorschau anzeigen</a>"
-
-#. translators: 1: Publish box date format, see https://secure.php.net/date 2: Post permalink
-#: post-types/testimonial.php:87
-msgid ""
-"Testimonial scheduled for: <strong>%1$s</strong>. <a target=\"_blank\" href="
-"\"%2$s\">Preview testimonial</a>"
-msgstr ""
-"Testimonial geplant für: <strong>%1$s</strong>. <a target=\"_blank\" href="
-"\"%2$s\">Testimonial-Vorschau anzeigen</a>"
-
-#. translators: 1: Publish box date format, see https://secure.php.net/date 2: Post permalink
-#: post-types/testimonial.php:87
-msgid "M j, Y @ G:i"
-msgstr "d.m.Y @ H:i"
-
-#. translators: %s: post permalink
-#: post-types/testimonial.php:89
-msgid ""
-"Testimonial draft updated. <a target=\"_blank\" href=\"%s\">Preview "
-"testimonial</a>"
-msgstr ""
-"Testimonial-Entwurf aktualisiert. <a target=\"_blank\" href=\"%s"
-"\">Testimonial-Vorschau anzeigen</a>"
-
-#. translators: %s: Number of testimonials.
-#: post-types/testimonial.php:107
-msgid "%s testimonial updated."
-msgid_plural "%s testimonials updated."
-msgstr[0] "%s Testimonial aktualisiert."
-msgstr[1] "%s Testimonials aktualisiert."
-
-#: post-types/testimonial.php:108
-msgid "1 testimonial not updated, somebody is editing it."
-msgstr "Ein Testimonial nicht aktualisiert, jemand bearbeitet es."
-
-#. translators: %s: Number of testimonials.
-#: post-types/testimonial.php:110
-msgid "%s testimonial not updated, somebody is editing it."
-msgid_plural "%s testimonials not updated, somebody is editing them."
-msgstr[0] "%s Testimonial nicht aktualisiert, jemand bearbeitet es."
-msgstr[1] "%s Testimonials nicht aktualisiert, jemand bearbeitet es."
-
-#. translators: %s: Number of testimonials.
-#: post-types/testimonial.php:112
-msgid "%s testimonial permanently deleted."
-msgid_plural "%s testimonials permanently deleted."
-msgstr[0] "%s Testimonial endgültig gelöscht."
-msgstr[1] "%s Testimonials endgültig gelöscht."
-
-#. translators: %s: Number of testimonials.
-#: post-types/testimonial.php:114
-msgid "%s testimonial moved to the Trash."
-msgid_plural "%s testimonials moved to the Trash."
-msgstr[0] "%s Testimonial in den Papierkorb gelegt."
-msgstr[1] "%s Testimonials in den Papierkorb gelegt."
-
-#. translators: %s: Number of testimonials.
-#: post-types/testimonial.php:116
-msgid "%s testimonial restored from the Trash."
-msgid_plural "%s testimonials restored from the Trash."
-msgstr[0] "%s Testimonial aus dem Papierkorb wiederhergestellt."
-msgstr[1] "%s Testimonials aus dem Papierkorb wiederhergestellt."
-
-#: taxonomies/testimonial-type.php:30 taxonomies/testimonial-type.php:47
+#: ../taxonomies/testimonial-type.php:30 ../taxonomies/testimonial-type.php:47
 msgid "Types"
 msgstr "Arten"
 
-#: taxonomies/testimonial-type.php:31
+#: ../taxonomies/testimonial-type.php:31
 msgctxt "taxonomy general name"
 msgid "Type"
 msgstr "Art"
 
-#: taxonomies/testimonial-type.php:32
+#: ../taxonomies/testimonial-type.php:32
 msgid "Search Types"
 msgstr "Arten suchen"
 
-#: taxonomies/testimonial-type.php:33
+#: ../taxonomies/testimonial-type.php:33
 msgid "Popular Types"
 msgstr "Beliebte Arten"
 
-#: taxonomies/testimonial-type.php:34
+#: ../taxonomies/testimonial-type.php:34
 msgid "All Types"
 msgstr "Alle Arten"
 
-#: taxonomies/testimonial-type.php:35
+#: ../taxonomies/testimonial-type.php:35
 msgid "Parent Type"
 msgstr "Übergeordnete Art"
 
-#: taxonomies/testimonial-type.php:36
+#: ../taxonomies/testimonial-type.php:36
 msgid "Parent Type:"
 msgstr "Übergeordnete Art:"
 
-#: taxonomies/testimonial-type.php:37
+#: ../taxonomies/testimonial-type.php:37
 msgid "Edit Type"
 msgstr "Art bearbeiten"
 
-#: taxonomies/testimonial-type.php:38
+#: ../taxonomies/testimonial-type.php:38
 msgid "Update Type"
 msgstr "Art aktualisieren"
 
-#: taxonomies/testimonial-type.php:39
+#: ../taxonomies/testimonial-type.php:39
 msgid "View Type"
 msgstr "Art anzeigen"
 
-#: taxonomies/testimonial-type.php:40
+#: ../taxonomies/testimonial-type.php:40
 msgid "Add New Type"
 msgstr "Neue Art erstellen"
 
-#: taxonomies/testimonial-type.php:41
+#: ../taxonomies/testimonial-type.php:41
 msgid "New Type"
 msgstr "Neue Art"
 
-#: taxonomies/testimonial-type.php:42
+#: ../taxonomies/testimonial-type.php:42
 msgid "Separate Types with commas"
 msgstr "Arten mittels Komma trennen"
 
-#: taxonomies/testimonial-type.php:43
+#: ../taxonomies/testimonial-type.php:43
 msgid "Add or remove Types"
 msgstr "Arten hinzufügen oder entfernen"
 
-#: taxonomies/testimonial-type.php:44
+#: ../taxonomies/testimonial-type.php:44
 msgid "Choose from the most used Types"
 msgstr "Wähle aus den häufig genutzten Arten"
 
-#: taxonomies/testimonial-type.php:45
+#: ../taxonomies/testimonial-type.php:45
 msgid "No Types found."
 msgstr "Keine Arten gefunden."
 
-#: taxonomies/testimonial-type.php:46
+#: ../taxonomies/testimonial-type.php:46
 msgid "No Types"
 msgstr "Keine Arten"
 
-#: taxonomies/testimonial-type.php:48
+#: ../taxonomies/testimonial-type.php:48
 msgid "Types list navigation"
 msgstr "Navigation der Artenliste"
 
-#: taxonomies/testimonial-type.php:49
+#: ../taxonomies/testimonial-type.php:49
 msgid "Types list"
 msgstr "Artenliste"
 
-#: taxonomies/testimonial-type.php:50
+#: ../taxonomies/testimonial-type.php:50
 msgctxt "testimonial_type"
 msgid "Most Used"
 msgstr "Meistgenutzt"
 
-#: taxonomies/testimonial-type.php:51
+#: ../taxonomies/testimonial-type.php:51
 msgid "&larr; Back to Types"
 msgstr "&larr; Zurück zu Arten"
 
-#: taxonomies/testimonial-type.php:72
+#: ../taxonomies/testimonial-type.php:72
 msgid "Type added."
 msgstr "Art hinzugefügt."
 
-#: taxonomies/testimonial-type.php:73
+#: ../taxonomies/testimonial-type.php:73
 msgid "Type deleted."
 msgstr "Art gelöscht."
 
-#: taxonomies/testimonial-type.php:74
+#: ../taxonomies/testimonial-type.php:74
 msgid "Type updated."
 msgstr "Art aktualisiert."
 
-#: taxonomies/testimonial-type.php:75
+#: ../taxonomies/testimonial-type.php:75
 msgid "Type not added."
 msgstr "Art wurde nicht hinzugefügt."
 
-#: taxonomies/testimonial-type.php:76
+#: ../taxonomies/testimonial-type.php:76
 msgid "Type not updated."
 msgstr "Art wurde nicht aktualisiert."
 
-#: taxonomies/testimonial-type.php:77
+#: ../taxonomies/testimonial-type.php:77
 msgid "Types deleted."
 msgstr "Arten gelöscht."
+
+#~ msgid "Testimonial Post Type"
+#~ msgstr "Testimonial Post Type"
+
+#~ msgid "https://github.com/2ndkauboy/testimonial-cpt/"
+#~ msgstr "https://github.com/2ndkauboy/testimonial-cpt/"
+
+#~ msgid "Register a post type to manage testimonials."
+#~ msgstr ""
+#~ "Registrierung eines eigenen Inhaltstyps zur Verwaltung von Testimonials."
+
+#~ msgid "Bernhard Kau"
+#~ msgstr "Bernhard Kau"
+
+#~ msgid "https://kau-boys.de"
+#~ msgstr "https://kau-boys.de"
+
+#~ msgid "All Testimonials"
+#~ msgstr "Alle Testimonials"
+
+#~ msgid "Testimonial Archives"
+#~ msgstr "Testimonial-Archive"
+
+#~ msgid "Testimonial Attributes"
+#~ msgstr "Testimonial-Attribute"
+
+#~ msgid "Insert into testimonial"
+#~ msgstr "In das Testimonial einfügen"
+
+#~ msgid "Uploaded to this testimonial"
+#~ msgstr "Zu diesem Testimonial hochgeladen"
+
+#~ msgctxt "testimonial"
+#~ msgid "Featured Image"
+#~ msgstr "Beitragsbild"
+
+#~ msgctxt "testimonial"
+#~ msgid "Set featured image"
+#~ msgstr "Beitragsbild festlegen"
+
+#~ msgctxt "testimonial"
+#~ msgid "Remove featured image"
+#~ msgstr "Beitragsbild entfernen"
+
+#~ msgctxt "testimonial"
+#~ msgid "Use as featured image"
+#~ msgstr "Als Beitragsbild verwenden"
+
+#~ msgid "Filter testimonials list"
+#~ msgstr "Testimonialliste filtern"
+
+#~ msgid "Testimonials list navigation"
+#~ msgstr "Navigation der Testimonialliste"
+
+#~ msgid "Testimonials list"
+#~ msgstr "Testimonialliste"
+
+#~ msgid "New Testimonial"
+#~ msgstr "Neues Testimonial"
+
+#~ msgid "Add New"
+#~ msgstr "Erstellen"
+
+#~ msgid "Add New Testimonial"
+#~ msgstr "Neues Testimonial hinzufügen"
+
+#~ msgid "Edit Testimonial"
+#~ msgstr "Testimonial bearbeiten"
+
+#~ msgid "View Testimonial"
+#~ msgstr "Testimonial anzeigen"
+
+#~ msgid "View Testimonials"
+#~ msgstr "Testimonials anzeigen"
+
+#~ msgid "Search testimonials"
+#~ msgstr "Testimonials durchsuchen"
+
+#~ msgid "No testimonials found"
+#~ msgstr "Keine Testimonials gefunden"
+
+#~ msgid "No testimonials found in trash"
+#~ msgstr "Keine Testimonials im Papierkorb gefunden"
+
+#~ msgid "Parent Testimonial:"
+#~ msgstr "Übergeordnetes Testimonial:"
+
+#~ msgid ""
+#~ "Testimonial updated. <a target=\"_blank\" href=\"%s\">View testimonial</a>"
+#~ msgstr ""
+#~ "Testimonial aktualisiert. <a target=\"_blank\" href=\"%s\">Testimonial "
+#~ "anzeigen</a>"
+
+#~ msgid "Custom field updated."
+#~ msgstr "Benutzerdefiniertes Feld aktualisiert."
+
+#~ msgid "Custom field deleted."
+#~ msgstr "Benutzerdefiniertes Feld gelöscht."
+
+#~ msgid "Testimonial updated."
+#~ msgstr "Testimonial aktualisiert."
+
+#~ msgid "Testimonial restored to revision from %s"
+#~ msgstr "Testimonial aus Revision vom %s wiederhergestellt."
+
+#~ msgid "Testimonial published. <a href=\"%s\">View testimonial</a>"
+#~ msgstr "Testimonial veröffentlicht. <a href=\"%s\">Testimonial anzeigen</a>"
+
+#~ msgid "Testimonial saved."
+#~ msgstr "Testimonial gespeichert."
+
+#~ msgid ""
+#~ "Testimonial submitted. <a target=\"_blank\" href=\"%s\">Preview "
+#~ "testimonial</a>"
+#~ msgstr ""
+#~ "Testimonial übermittelt. <a target=\"_blank\" href=\"%s\">Testimonial-"
+#~ "Vorschau anzeigen</a>"
+
+#~ msgid ""
+#~ "Testimonial scheduled for: <strong>%1$s</strong>. <a target=\"_blank\" "
+#~ "href=\"%2$s\">Preview testimonial</a>"
+#~ msgstr ""
+#~ "Testimonial geplant für: <strong>%1$s</strong>. <a target=\"_blank\" href="
+#~ "\"%2$s\">Testimonial-Vorschau anzeigen</a>"
+
+#~ msgid "M j, Y @ G:i"
+#~ msgstr "d.m.Y @ H:i"
+
+#~ msgid ""
+#~ "Testimonial draft updated. <a target=\"_blank\" href=\"%s\">Preview "
+#~ "testimonial</a>"
+#~ msgstr ""
+#~ "Testimonial-Entwurf aktualisiert. <a target=\"_blank\" href=\"%s"
+#~ "\">Testimonial-Vorschau anzeigen</a>"
+
+#~ msgid "%s testimonial updated."
+#~ msgid_plural "%s testimonials updated."
+#~ msgstr[0] "%s Testimonial aktualisiert."
+#~ msgstr[1] "%s Testimonials aktualisiert."
+
+#~ msgid "1 testimonial not updated, somebody is editing it."
+#~ msgstr "Ein Testimonial nicht aktualisiert, jemand bearbeitet es."
+
+#~ msgid "%s testimonial not updated, somebody is editing it."
+#~ msgid_plural "%s testimonials not updated, somebody is editing them."
+#~ msgstr[0] "%s Testimonial nicht aktualisiert, jemand bearbeitet es."
+#~ msgstr[1] "%s Testimonials nicht aktualisiert, jemand bearbeitet es."
+
+#~ msgid "%s testimonial permanently deleted."
+#~ msgid_plural "%s testimonials permanently deleted."
+#~ msgstr[0] "%s Testimonial endgültig gelöscht."
+#~ msgstr[1] "%s Testimonials endgültig gelöscht."
+
+#~ msgid "%s testimonial moved to the Trash."
+#~ msgid_plural "%s testimonials moved to the Trash."
+#~ msgstr[0] "%s Testimonial in den Papierkorb gelegt."
+#~ msgstr[1] "%s Testimonials in den Papierkorb gelegt."
+
+#~ msgid "%s testimonial restored from the Trash."
+#~ msgid_plural "%s testimonials restored from the Trash."
+#~ msgstr[0] "%s Testimonial aus dem Papierkorb wiederhergestellt."
+#~ msgstr[1] "%s Testimonials aus dem Papierkorb wiederhergestellt."
