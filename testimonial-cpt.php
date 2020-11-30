@@ -33,5 +33,28 @@ function testimonial_cpt_load_textdomain() {
 }
 add_action( 'plugins_loaded', 'testimonial_cpt_load_textdomain' );
 
+/**
+ * Filter the allowed block types for the post type.
+ *
+ * @param bool|array $allowed_block_types Array of block type slugs.
+ * @param WP_Post    $post                The post resource data.
+ *
+ * @return string[]
+ */
+function testimonial_cpt_allowed_blocks( $allowed_block_types, $post ) {
+	if ( 'testimonial' === $post->post_type ) {
+		return array(
+			'core/paragraph',
+			'core/list',
+			'core/quote',
+			'core/image',
+			'core/video',
+		);
+	}
+
+	return $allowed_block_types;
+}
+add_action( 'allowed_block_types', 'testimonial_cpt_allowed_blocks', 10, 2 );
+
 require 'post-types/testimonial.php';
 require 'taxonomies/testimonial-type.php';
