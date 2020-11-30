@@ -21,5 +21,17 @@
  * Domain Path:       /languages
  */
 
+/**
+ * Load the translation file for the plugin.
+ */
+function testimonial_cpt_load_textdomain() {
+	load_plugin_textdomain(
+		'testimonial-cpt',
+		false,
+		dirname( plugin_basename( __FILE__ ) ) . '/languages'
+	);
+}
+add_action( 'plugins_loaded', 'testimonial_cpt_load_textdomain' );
+
 require 'post-types/testimonial.php';
 require 'taxonomies/testimonial-type.php';

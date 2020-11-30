@@ -1,0 +1,337 @@
+# Copyright (C) 2020 Bernhard Kau
+# This file is distributed under the GPL v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Testimonial Post Type 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/testimonial-cpt\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2020-11-22T17:56:31+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.5.0-alpha-33ed4cc\n"
+"X-Domain: testimonial-cpt\n"
+
+#. Plugin Name of the plugin
+msgid "Testimonial Post Type"
+msgstr ""
+
+#. Plugin URI of the plugin
+msgid "https://github.com/2ndkauboy/testimonial-cpt/"
+msgstr ""
+
+#. Description of the plugin
+msgid "Register a post type to manage testimonials."
+msgstr ""
+
+#. Author of the plugin
+msgid "Bernhard Kau"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://kau-boys.de"
+msgstr ""
+
+#: post-types/testimonial.php:16
+#: post-types/testimonial.php:40
+msgid "Testimonials"
+msgstr ""
+
+#: post-types/testimonial.php:17
+msgid "Testimonial"
+msgstr ""
+
+#: post-types/testimonial.php:18
+msgid "All Testimonials"
+msgstr ""
+
+#: post-types/testimonial.php:19
+msgid "Testimonial Archives"
+msgstr ""
+
+#: post-types/testimonial.php:20
+msgid "Testimonial Attributes"
+msgstr ""
+
+#: post-types/testimonial.php:21
+msgid "Insert into testimonial"
+msgstr ""
+
+#: post-types/testimonial.php:22
+msgid "Uploaded to this testimonial"
+msgstr ""
+
+#: post-types/testimonial.php:23
+msgctxt "testimonial"
+msgid "Featured Image"
+msgstr ""
+
+#: post-types/testimonial.php:24
+msgctxt "testimonial"
+msgid "Set featured image"
+msgstr ""
+
+#: post-types/testimonial.php:25
+msgctxt "testimonial"
+msgid "Remove featured image"
+msgstr ""
+
+#: post-types/testimonial.php:26
+msgctxt "testimonial"
+msgid "Use as featured image"
+msgstr ""
+
+#: post-types/testimonial.php:27
+msgid "Filter testimonials list"
+msgstr ""
+
+#: post-types/testimonial.php:28
+msgid "Testimonials list navigation"
+msgstr ""
+
+#: post-types/testimonial.php:29
+msgid "Testimonials list"
+msgstr ""
+
+#: post-types/testimonial.php:30
+msgid "New Testimonial"
+msgstr ""
+
+#: post-types/testimonial.php:31
+msgid "Add New"
+msgstr ""
+
+#: post-types/testimonial.php:32
+msgid "Add New Testimonial"
+msgstr ""
+
+#: post-types/testimonial.php:33
+msgid "Edit Testimonial"
+msgstr ""
+
+#: post-types/testimonial.php:34
+msgid "View Testimonial"
+msgstr ""
+
+#: post-types/testimonial.php:35
+msgid "View Testimonials"
+msgstr ""
+
+#: post-types/testimonial.php:36
+msgid "Search testimonials"
+msgstr ""
+
+#: post-types/testimonial.php:37
+msgid "No testimonials found"
+msgstr ""
+
+#: post-types/testimonial.php:38
+msgid "No testimonials found in trash"
+msgstr ""
+
+#: post-types/testimonial.php:39
+msgid "Parent Testimonial:"
+msgstr ""
+
+#. translators: %s: post permalink
+#: post-types/testimonial.php:75
+msgid "Testimonial updated. <a target=\"_blank\" href=\"%s\">View testimonial</a>"
+msgstr ""
+
+#: post-types/testimonial.php:76
+msgid "Custom field updated."
+msgstr ""
+
+#: post-types/testimonial.php:77
+msgid "Custom field deleted."
+msgstr ""
+
+#: post-types/testimonial.php:78
+msgid "Testimonial updated."
+msgstr ""
+
+#. translators: %s: date and time of the revision
+#: post-types/testimonial.php:80
+msgid "Testimonial restored to revision from %s"
+msgstr ""
+
+#. translators: %s: post permalink
+#: post-types/testimonial.php:82
+msgid "Testimonial published. <a href=\"%s\">View testimonial</a>"
+msgstr ""
+
+#: post-types/testimonial.php:83
+msgid "Testimonial saved."
+msgstr ""
+
+#. translators: %s: post permalink
+#: post-types/testimonial.php:85
+msgid "Testimonial submitted. <a target=\"_blank\" href=\"%s\">Preview testimonial</a>"
+msgstr ""
+
+#. translators: 1: Publish box date format, see https://secure.php.net/date 2: Post permalink
+#: post-types/testimonial.php:87
+msgid "Testimonial scheduled for: <strong>%1$s</strong>. <a target=\"_blank\" href=\"%2$s\">Preview testimonial</a>"
+msgstr ""
+
+#. translators: 1: Publish box date format, see https://secure.php.net/date 2: Post permalink
+#: post-types/testimonial.php:87
+msgid "M j, Y @ G:i"
+msgstr ""
+
+#. translators: %s: post permalink
+#: post-types/testimonial.php:89
+msgid "Testimonial draft updated. <a target=\"_blank\" href=\"%s\">Preview testimonial</a>"
+msgstr ""
+
+#. translators: %s: Number of testimonials.
+#: post-types/testimonial.php:107
+msgid "%s testimonial updated."
+msgid_plural "%s testimonials updated."
+msgstr[0] ""
+msgstr[1] ""
+
+#: post-types/testimonial.php:108
+msgid "1 testimonial not updated, somebody is editing it."
+msgstr ""
+
+#. translators: %s: Number of testimonials.
+#: post-types/testimonial.php:110
+msgid "%s testimonial not updated, somebody is editing it."
+msgid_plural "%s testimonials not updated, somebody is editing them."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: Number of testimonials.
+#: post-types/testimonial.php:112
+msgid "%s testimonial permanently deleted."
+msgid_plural "%s testimonials permanently deleted."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: Number of testimonials.
+#: post-types/testimonial.php:114
+msgid "%s testimonial moved to the Trash."
+msgid_plural "%s testimonials moved to the Trash."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: Number of testimonials.
+#: post-types/testimonial.php:116
+msgid "%s testimonial restored from the Trash."
+msgid_plural "%s testimonials restored from the Trash."
+msgstr[0] ""
+msgstr[1] ""
+
+#: taxonomies/testimonial-type.php:30
+#: taxonomies/testimonial-type.php:47
+msgid "Types"
+msgstr ""
+
+#: taxonomies/testimonial-type.php:31
+msgctxt "taxonomy general name"
+msgid "Type"
+msgstr ""
+
+#: taxonomies/testimonial-type.php:32
+msgid "Search Types"
+msgstr ""
+
+#: taxonomies/testimonial-type.php:33
+msgid "Popular Types"
+msgstr ""
+
+#: taxonomies/testimonial-type.php:34
+msgid "All Types"
+msgstr ""
+
+#: taxonomies/testimonial-type.php:35
+msgid "Parent Type"
+msgstr ""
+
+#: taxonomies/testimonial-type.php:36
+msgid "Parent Type:"
+msgstr ""
+
+#: taxonomies/testimonial-type.php:37
+msgid "Edit Type"
+msgstr ""
+
+#: taxonomies/testimonial-type.php:38
+msgid "Update Type"
+msgstr ""
+
+#: taxonomies/testimonial-type.php:39
+msgid "View Type"
+msgstr ""
+
+#: taxonomies/testimonial-type.php:40
+msgid "Add New Type"
+msgstr ""
+
+#: taxonomies/testimonial-type.php:41
+msgid "New Type"
+msgstr ""
+
+#: taxonomies/testimonial-type.php:42
+msgid "Separate Types with commas"
+msgstr ""
+
+#: taxonomies/testimonial-type.php:43
+msgid "Add or remove Types"
+msgstr ""
+
+#: taxonomies/testimonial-type.php:44
+msgid "Choose from the most used Types"
+msgstr ""
+
+#: taxonomies/testimonial-type.php:45
+msgid "No Types found."
+msgstr ""
+
+#: taxonomies/testimonial-type.php:46
+msgid "No Types"
+msgstr ""
+
+#: taxonomies/testimonial-type.php:48
+msgid "Types list navigation"
+msgstr ""
+
+#: taxonomies/testimonial-type.php:49
+msgid "Types list"
+msgstr ""
+
+#: taxonomies/testimonial-type.php:50
+msgctxt "testimonial_type"
+msgid "Most Used"
+msgstr ""
+
+#: taxonomies/testimonial-type.php:51
+msgid "&larr; Back to Types"
+msgstr ""
+
+#: taxonomies/testimonial-type.php:72
+msgid "Type added."
+msgstr ""
+
+#: taxonomies/testimonial-type.php:73
+msgid "Type deleted."
+msgstr ""
+
+#: taxonomies/testimonial-type.php:74
+msgid "Type updated."
+msgstr ""
+
+#: taxonomies/testimonial-type.php:75
+msgid "Type not added."
+msgstr ""
+
+#: taxonomies/testimonial-type.php:76
+msgid "Type not updated."
+msgstr ""
+
+#: taxonomies/testimonial-type.php:77
+msgid "Types deleted."
+msgstr ""
