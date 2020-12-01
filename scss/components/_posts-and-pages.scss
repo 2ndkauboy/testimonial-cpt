@@ -85,6 +85,10 @@
 	font-family: $font__headline;
 	font-weight: normal;
 	font-style: italic;
+
+	p {
+		font-family: $font__headline;
+	}
 }
 
 #comments h3.comments-title,

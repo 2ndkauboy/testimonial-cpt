@@ -5,7 +5,7 @@
  Author:      VCAT Consulting GmbH
  Author URI:  https://www.vcat.de/
  Template:    uku
- Version:     1.2.2
+ Version:     1.2.3
  License:     GNU General Public License v2 or later
  License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
@@ -133,7 +133,6 @@ blockquote {
 p.section-about-text,
 p.text-big,
 p.text-small,
-.entry-content blockquote p,
 .entry-content p span.uppercase,
 .section-about-column-two .social-nav ul li a,
 .section-about-column-one p cite,
@@ -562,6 +561,11 @@ p.site-description {
 	font-family: "Merriweather", Georgia, Times, "Times New Roman", serif;
 	font-weight: normal;
 	font-style: italic;
+}
+
+.single-post .entry-content blockquote p,
+.page .entry-content blockquote p {
+	font-family: "Merriweather", Georgia, Times, "Times New Roman", serif;
 }
 
 #comments h3.comments-title,
