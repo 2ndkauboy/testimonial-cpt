@@ -33,6 +33,46 @@ function testimonial_cpt_load_textdomain() {
 }
 add_action( 'plugins_loaded', 'testimonial_cpt_load_textdomain' );
 
+
+/**
+ * Enqueue styles for the frontend.
+ */
+function testimonial_cpt_frontend_scripts() {
+	wp_enqueue_style(
+		'testimonial-cpt-style',
+		plugins_url( 'style.css', __FILE__ ),
+		array(),
+		filemtime( plugin_dir_path( __FILE__ ) . 'style.css' )
+	);
+}
+add_action( 'wp_enqueue_scripts', 'testimonial_cpt_frontend_scripts' );
+
+/**
+ * Enqueue styles for the block editor only.
+ */
+function testimonial_cpt_editor_scripts() {
+	wp_enqueue_style(
+		'testimonial-cpt-editor',
+		plugins_url( 'editor.css', __FILE__ ),
+		array(),
+		filemtime( plugin_dir_path( __FILE__ ) . 'editor.css' )
+	);
+}
+add_action( 'enqueue_block_editor_assets', 'testimonial_cpt_editor_scripts' );
+
+/**
+ * Enqueue styles for the frontend and the block editor.
+ */
+function testimonial_cpt_blocks_scripts() {
+	wp_enqueue_style(
+		'testimonial-cpt-blocks',
+		plugins_url( 'blocks.css', __FILE__ ),
+		array(),
+		filemtime( plugin_dir_path( __FILE__ ) . 'blocks.css' )
+	);
+}
+add_action( 'enqueue_block_assets', 'testimonial_cpt_blocks_scripts' );
+
 /**
  * Filter the allowed block types for the post type.
  *
